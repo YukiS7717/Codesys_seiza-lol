@@ -15,4 +15,13 @@ markdown_extensions:
   - admonition
 
 nav:
-  - Home: index.md
+  - Home:
+      - "Index": index.md
+      - "Introduction": Others/Introduction.md
+  - Codesys:
+      - "デバッグ機能": Codesys/Debug.md
+  - IEC:
+      - "基本機能":
+          - "Function": IEC/Function.md
+          - "Function Block": IEC/Function_Block.md
+          - "STRING/WSTRING 関数": IEC/STRING_WSTRING_Function.md
