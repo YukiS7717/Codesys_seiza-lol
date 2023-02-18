@@ -1,0 +1,18 @@
+site_name: 正座のCodesys
+
+theme:
+  name: material
+  palette:
+    primary: blue
+  font:
+    text: UD Digi Kyokasho NK-R
+  features:
+    navigation.prune: true
+    navigation.tabs: true
+    navigation.top: true
+
+markdown_extensions:
+  - admonition
+
+nav:
+  - Home: index.md
