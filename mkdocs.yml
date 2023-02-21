@@ -1,11 +1,14 @@
 site_name: 正座のCodesys
+copyright: "&copy; 2023 Seiza"
 
 theme:
   name: material
+  language: ja
   palette:
     primary: blue
   font:
     text: UD Digi Kyokasho NK-R
+    code: UD Digi Kyokasho N-R
   features:
     navigation.prune: true
     navigation.tabs: true
@@ -13,14 +16,40 @@ theme:
 
 markdown_extensions:
   - admonition
+  - attr_list
+  - md_in_html
+  - def_list
+  - footnotes
+  - tables
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra:
+  generator: false
+  consent:
+    title: Cookie consent
+    description:
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+#  analytics:
+#    provider: google
+#    property: UA-XXXXXXXX-X
+
+plugins:
+  search:
+    lang: "ja"
 
 nav:
-  - Home:
-      - "Index": index.md
-      - "Introduction": Others/Introduction.md
+  - Home: index.md
+  - "Introduction": Others/Introduction.md
   - Codesys:
       - "デバッグ機能": Codesys/Debug.md
-  - IEC:
+  - IEC61131-3:
       - "基本機能":
           - "Function": IEC/Function.md
           - "Function Block": IEC/Function_Block.md
